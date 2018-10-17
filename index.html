@@ -2,11 +2,22 @@
 <html lang="en" dir="ltr">
 
   <head>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-widt initial-width=1.0">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
     <title>my vlog</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- BOOTSTRAP JS JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
   </head>
 
   <body>
@@ -14,17 +25,21 @@
     <nav>
       <ul class="unstyled-list">
         <li><a href="">HOME</a></li>
-        <li><a href=""><i class="fas fa-user-alt"></i>ABOUT</a></li>
-        <li><a href=""><i class="fas fa-th"></i>PORTFOLIO</a></li>
-        <li><a href=""><i class="fas fa-envelope"></i>CONTACT</a></li>
-        <li class="search-nav"><a href="#"> <i class="fas fa-search"></i> </a> </li>
+        <!-- hide this section -->
+        <div class="hide-me">
+          <li><a href=""><i class="fas fa-user-alt"></i> ABOUT</a></li>
+          <li><a href=""><i class="fas fa-th"></i> PORTFOLIO</a></li>
+          <li><a href=""><i class="fas fa-envelope"></i> CONTACT</a></li>
+        </div>
+        <!-- end hide section -->
+        <li class="search-nav"><a class="search-a" href="#"> <i class="fas fa-search"></i> </a> </li>
       </ul>
     </nav>
 
     <!-- HEADER -->
     <header>
       <div class="header-bg"></div>
-      <h1 class="header-text">MY WEBSITE LOGO</h1>
+      <h1 class="header-text"> <span id="logo-span">MY WEBSITE</span>  LOGO</h1>
     </header>
 
 
@@ -62,45 +77,75 @@
 
 
       <section class="superhero">
-        <h2> I'm really good at: </h2>
-        <!-- TODO: ADD PROGRESSION BAR -->
-        <p class="superhero_photography">Photography</p>
-        <!-- TODO:  INSERT ICONDS TOO -->
-        <p class="superhero_web">Web Design</p>
-        <!-- TODO:  -->
-        <p class="superhero_photoshop">Photoshop</p>
-      </section>
+        <h4> I'm really good at: </h4>
 
-
-      <!-- NUMBER -->
-      <section class="numbers">
-        <div class="number-1">
-          <h1>14+</h1>
-          <p>Partners</p>
+        <p class="superhero_photography"> <i class="fas fa-camera-retro"></i> Photography</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+            50%
+          </div>
         </div>
-        <div class="number-2">
-          <h1>55+</h1>
-          <p>Projects Done</p>
+        <p class="superhero_web"><i class="fas fa-laptop"></i> Web Design</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:72%;">
+            72%
+          </div>
         </div>
-        <div class="number-3">
-          <h1>90+</h1>
-          <p>Happy Clients</p>
-        </div>
-        <div class="number-4">
-          <h1>150+</h1>
-          <p>Meetings</p>
+        <p class="superhero_photoshop"> <i class="far fa-image"></i> Photoshop</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:12%">
+            12%
+          </div>
         </div>
       </section>
 
-
-      <!-- GOLLUM -->
-      <section class="gollum">
-        <div class="gollum-bg"></div>
-        <h1 class="gollum-title">PORTFOLIO</h1>
-      </section>
+    </div>
 
 
 
+
+
+
+    <!-- NUMBER -->
+    <section class="numbers">
+      <div class="number-1">
+        <h1>14+</h1>
+
+        <p>Partners</p>
+      </div>
+      <div class="number-2">
+        <h1>55+</h1>
+        <p>Projects Done</p>
+      </div>
+      <div class="number-3">
+        <h1>90+</h1>
+        <p>Happy Clients</p>
+      </div>
+      <div class="number-4">
+        <h1>150+</h1>
+        <p>Meetings</p>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- GOLLUM -->
+    <section class="gollum">
+      <div class="gollum-bg"></div>
+      <h1 class="gollum-title">PORTFOLIO</h1>
+    </section>
+
+
+
+
+
+
+
+
+    <div class="container">
 
       <!-- PORTFOLIO -->
       <section class="portfolio">
@@ -110,38 +155,98 @@
         <!-- PORTFOLIO GRID -->
         <section class="portfolio-grid">
           <img src="images/p1.jpg" alt="immage unnavailable">
-          <img src="images/p2.jpg" alt="immage unnavailable">
-          <img src="images/p3.jpg" alt="immage unnavailable">
-          <img src="images/p4.jpg" alt="immage unnavailable">
+          <img class="portfolio-img-hide" src="images/p2.jpg" alt="immage unnavailable">
+          <img class="portfolio-img-hide" src="images/p3.jpg" alt="immage unnavailable">
+          <img class="portfolio-img-hide" src="images/p4.jpg" alt="immage unnavailable">
           <img src="images/p5.jpg" alt="immage unnavailable">
           <img src="images/p6.jpg" alt="immage unnavailable">
-          <img src="images/p7.jpg" alt="immage unnavailable">
+          <img class="featured" src="images/p7.jpg" alt="immage unnavailable">
           <img src="images/p8.jpg" alt="immage unnavailable">
+          <img class="portfolio-last-img" src="images/p2.jpg" alt="immage unnavailable">
+
         </section>
 
         <!-- BTN -->
         <a href="#" class="btn">LOAD MORE</a>
+
       </section>
 
 
 
 
-      <!-- SMEAGLE -->
-      <div class="smeagle">
-        <div class="smeagle-bg"></div>
-        <h1 class="smeagle-text">CONTACT</h1>
-      </div>
+
+
+
+
+    </div>
+
+    <!-- SMEAGLE -->
+    <div class="smeagle">
+      <div class="smeagle-bg"></div>
+      <div class="smeagle-bg-2"></div>
+      <h1 class="smeagle-text">CONTACT</h1>
+    </div>
+
+    <div class="container">
+
+
+
+
+
+
 
 
       <!-- CONTACT -->
       <section class="contact">
         <h1>WHERE I WORK</h1>
-        <p class="contact-subtitle"></p>
+        <p class="contact-subtitle"> <em>I'd love your feedback!</em> </p>
+        <div class="contact-grid">
+          <div class="grid-left">
+
+
+
+            <h2> <i class="fas fa-map-marker-alt"></i> Chicago,Us</h2>
+            <h2><i class="fas fa-phone"></i>  Phone: +00 151515 </h2>
+            <h2> <i class="fas fa-envelope"></i> Email@email.com </h2>
+            <p> Swing by for a cup of <i class="fas fa-coffee"></i> or leave me a note: </p>
+          </div>
+          <!-- FORM -->
+          <form class="grid-right">
+            <input type="text" name="" value="" placeholder="Name">
+            <input type="email" name="" value="" placeholder="Email" required>
+            <input type="text" name="" value="" placeholder="Message">
+            <a class="submit-btn" type="submit"> <i class="fas fa-paper-plane"></i> Send Message </a>
+
+          </form>
+        </div>
 
       </section>
+    </div>
 
 
-      <!-- END CONTAINER -->
+
+
+
+
+
+
+
+
+    <footer>
+      <a href="#" class="btn"> <i class="fas fa-arrow-up"></i> To the top</a>
+      <br>
+      <div class="social-medias">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+
+
+      <p>Powered by <a class="my_name" href="#">andrei radu frandes</a> </p>
+    </footer>
+
+
+    <!-- END CONTAINER -->
     </div>
   </body>
 
